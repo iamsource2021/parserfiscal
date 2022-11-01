@@ -78,7 +78,7 @@ export default function HeroLayout3(props) {
           <Text
             fontFamily="Inter"
             fontSize="24px"
-            fontWeight="400"
+            fontWeight="600"
             color="rgba(255,255,255,1)"
             lineHeight="30px"
             textAlign="center"
@@ -137,6 +137,7 @@ export default function HeroLayout3(props) {
           alignItems="center"
           shrink="0"
           position="relative"
+          border="1px SOLID rgba(0,0,0,1)"
           size="large"
           isDisabled={false}
           variation="primary"

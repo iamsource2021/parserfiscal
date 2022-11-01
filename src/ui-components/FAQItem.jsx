@@ -54,7 +54,7 @@ export default function FAQItem(props) {
           <Text
             fontFamily="Inter"
             fontSize="16px"
-            fontWeight="400"
+            fontWeight="800"
             color="rgba(0,0,0,1)"
             lineHeight="20px"
             textAlign="left"

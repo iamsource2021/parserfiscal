@@ -39,7 +39,7 @@ export default function ItemCard(props) {
         fontSize="12px"
         lineHeight="12px"
         fontFamily="Inter"
-        fontWeight="400"
+        fontWeight="600"
         color="rgba(13,26,38,1)"
         textAlign="left"
         size="small"
@@ -119,7 +119,7 @@ export default function ItemCard(props) {
         <Text
           fontFamily="Inter"
           fontSize="16px"
-          fontWeight="400"
+          fontWeight="800"
           color="rgba(13,26,38,1)"
           lineHeight="20px"
           textAlign="right"

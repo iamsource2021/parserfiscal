@@ -281,6 +281,7 @@ export default function EditProfile(props) {
           alignItems="center"
           shrink="0"
           position="relative"
+          border="1px SOLID rgba(0,0,0,1)"
           size="default"
           isDisabled={false}
           variation="primary"

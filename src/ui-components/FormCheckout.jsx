@@ -76,7 +76,7 @@ export default function FormCheckout(props) {
             <Text
               fontFamily="Inter"
               fontSize="16px"
-              fontWeight="400"
+              fontWeight="800"
               color="rgba(13,26,38,1)"
               lineHeight="20px"
               textAlign="left"
@@ -164,7 +164,7 @@ export default function FormCheckout(props) {
             <Text
               fontFamily="Inter"
               fontSize="16px"
-              fontWeight="400"
+              fontWeight="800"
               color="rgba(13,26,38,1)"
               lineHeight="20px"
               textAlign="left"
@@ -268,9 +268,9 @@ export default function FormCheckout(props) {
           position="relative"
           borderRadius="32px"
           padding="8px 12px 8px 12px"
-          color="rgba(54,94,61,1)"
+          color="rgba(34,66,38,1)"
           fontFamily="Inter"
-          fontWeight="400"
+          fontWeight="600"
           fontSize="14px"
           textAlign="left"
           lineHeight="14px"
@@ -309,7 +309,7 @@ export default function FormCheckout(props) {
           <Text
             fontFamily="Inter"
             fontSize="16px"
-            fontWeight="400"
+            fontWeight="800"
             color="rgba(13,26,38,1)"
             lineHeight="20px"
             textAlign="left"
@@ -330,7 +330,7 @@ export default function FormCheckout(props) {
           <Text
             fontFamily="Inter"
             fontSize="16px"
-            fontWeight="400"
+            fontWeight="800"
             color="rgba(13,26,38,1)"
             lineHeight="20px"
             textAlign="right"
@@ -635,6 +635,7 @@ export default function FormCheckout(props) {
           shrink="0"
           alignSelf="stretch"
           position="relative"
+          border="1px SOLID rgba(0,0,0,1)"
           size="large"
           isDisabled={false}
           variation="primary"

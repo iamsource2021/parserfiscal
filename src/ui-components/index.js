@@ -6,6 +6,7 @@
 
 export { default as Features4x1 } from "./Features4x1";
 export { default as ContactUs } from "./ContactUs";
+export { default as SideBarCustom } from "./SideBarCustom";
 export { default as Features2x2 } from "./Features2x2";
 export { default as FAQItem } from "./FAQItem";
 export { default as HomeNews } from "./HomeNews";

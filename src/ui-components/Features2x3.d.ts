@@ -8,6 +8,8 @@ import * as React from "react";
 import { EscapeHatchProps } from "@aws-amplify/ui-react/internal";
 import { FlexProps } from "@aws-amplify/ui-react";
 export declare type Features2x3Props = React.PropsWithChildren<Partial<FlexProps> & {
+    backgroundColor?: String;
+} & {
     overrides?: EscapeHatchProps | undefined | null;
 }>;
 export default function Features2x3(props: Features2x3Props): React.ReactElement;

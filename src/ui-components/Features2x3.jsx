@@ -9,7 +9,7 @@ import * as React from "react";
 import { getOverrideProps } from "@aws-amplify/ui-react/internal";
 import { Flex, Icon, Text, View } from "@aws-amplify/ui-react";
 export default function Features2x3(props) {
-  const { overrides, ...rest } = props;
+  const { backgroundColor, overrides, ...rest } = props;
   return (
     <Flex
       gap="10px"
@@ -20,7 +20,7 @@ export default function Features2x3(props) {
       alignItems="center"
       position="relative"
       padding="40px 140px 40px 140px"
-      backgroundColor="rgba(92,102,112,1)"
+      backgroundColor="rgba(239,240,240,1)"
       {...rest}
       {...getOverrideProps(overrides, "Features2x3")}
     >

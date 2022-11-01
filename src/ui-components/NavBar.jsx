@@ -42,7 +42,7 @@ export default function NavBar(props) {
         alignSelf="stretch"
         position="relative"
         padding="0px 0px 0px 0px"
-        {...getOverrideProps(overrides, "Logo29767073")}
+        {...getOverrideProps(overrides, "Logo")}
       >
         <Icon
           width="18px"
@@ -66,10 +66,10 @@ export default function NavBar(props) {
         <Text
           fontFamily="Inter"
           fontSize="20px"
-          fontWeight="400"
+          fontWeight="600"
           color="rgba(0,0,0,1)"
           textTransform="capitalize"
-          lineHeight="23.4375px"
+          lineHeight="24.204544067382812px"
           textAlign="left"
           display="block"
           direction="column"
@@ -82,8 +82,8 @@ export default function NavBar(props) {
           position="relative"
           padding="0px 0px 0px 0px"
           whiteSpace="pre-wrap"
-          children="Logo"
-          {...getOverrideProps(overrides, "Logo29767075")}
+          children="NombreEmpresa"
+          {...getOverrideProps(overrides, "NombreEmpresa")}
         ></Text>
       </Flex>
       <Flex
@@ -269,6 +269,7 @@ export default function NavBar(props) {
           borderRadius="160px"
           padding="0px 0px 0px 0px"
           objectFit="cover"
+          src="https://media-exp1.licdn.com/dms/image/C4E03AQELDsRqB6oBmw/profile-displayphoto-shrink_800_800/0/1611353569637?e=1672876800&v=beta&t=91KPTvcJlTvqvhfp4_A4iiT433X4dnVp-u3y-aCCECM"
           {...getOverrideProps(overrides, "image")}
         ></Image>
       </Flex>

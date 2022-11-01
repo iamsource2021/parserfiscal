@@ -157,6 +157,7 @@ export default function ActionCard(props) {
           shrink="0"
           alignSelf="stretch"
           position="relative"
+          border="1px SOLID rgba(0,0,0,1)"
           size="large"
           isDisabled={false}
           variation="primary"

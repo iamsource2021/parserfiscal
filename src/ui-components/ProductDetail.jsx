@@ -87,7 +87,7 @@ export default function ProductDetail(props) {
             <Text
               fontFamily="Inter"
               fontSize="24px"
-              fontWeight="400"
+              fontWeight="600"
               color="rgba(13,26,38,1)"
               lineHeight="30px"
               textAlign="left"
@@ -164,7 +164,7 @@ export default function ProductDetail(props) {
             <Text
               fontFamily="Inter"
               fontSize="16px"
-              fontWeight="400"
+              fontWeight="800"
               color="rgba(13,26,38,1)"
               lineHeight="20px"
               textAlign="left"
@@ -241,7 +241,7 @@ export default function ProductDetail(props) {
             <Text
               fontFamily="Inter"
               fontSize="16px"
-              fontWeight="400"
+              fontWeight="800"
               color="rgba(13,26,38,1)"
               lineHeight="20px"
               textAlign="left"
@@ -317,7 +317,7 @@ export default function ProductDetail(props) {
         <Text
           fontFamily="Inter"
           fontSize="24px"
-          fontWeight="400"
+          fontWeight="600"
           color="rgba(13,26,38,1)"
           lineHeight="30px"
           textAlign="left"
@@ -407,6 +407,7 @@ export default function ProductDetail(props) {
             position="absolute"
             top="189px"
             left="0px"
+            border="1px SOLID rgba(0,0,0,1)"
             size="default"
             isDisabled={false}
             variation="primary"
@@ -453,6 +454,7 @@ export default function ProductDetail(props) {
               alignItems="center"
               shrink="0"
               position="relative"
+              border="1px SOLID rgba(0,0,0,1)"
               size="large"
               isDisabled={false}
               variation="primary"
@@ -469,6 +471,7 @@ export default function ProductDetail(props) {
               alignItems="center"
               shrink="0"
               position="relative"
+              border="1px SOLID rgba(0,0,0,1)"
               size="large"
               isDisabled={false}
               variation="primary"
@@ -485,6 +488,7 @@ export default function ProductDetail(props) {
               alignItems="center"
               shrink="0"
               position="relative"
+              border="1px SOLID rgba(0,0,0,1)"
               size="large"
               isDisabled={false}
               variation="primary"
@@ -515,6 +519,7 @@ export default function ProductDetail(props) {
               alignItems="center"
               shrink="0"
               position="relative"
+              border="1px SOLID rgba(0,0,0,1)"
               size="large"
               isDisabled={false}
               variation="primary"
@@ -531,6 +536,7 @@ export default function ProductDetail(props) {
               alignItems="center"
               shrink="0"
               position="relative"
+              border="1px SOLID rgba(0,0,0,1)"
               size="large"
               isDisabled={false}
               variation="primary"
@@ -547,6 +553,7 @@ export default function ProductDetail(props) {
               alignItems="center"
               shrink="0"
               position="relative"
+              border="1px SOLID rgba(0,0,0,1)"
               size="large"
               isDisabled={false}
               variation="primary"
@@ -563,6 +570,7 @@ export default function ProductDetail(props) {
               alignItems="center"
               shrink="0"
               position="relative"
+              border="1px SOLID rgba(0,0,0,1)"
               size="large"
               isDisabled={false}
               variation="primary"

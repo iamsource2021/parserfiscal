@@ -69,7 +69,7 @@ export default function Features2x2(props) {
             <Text
               fontFamily="Inter"
               fontSize="24px"
-              fontWeight="400"
+              fontWeight="600"
               color="rgba(13,26,38,1)"
               lineHeight="30px"
               textAlign="left"
@@ -134,7 +134,7 @@ export default function Features2x2(props) {
             <Text
               fontFamily="Inter"
               fontSize="24px"
-              fontWeight="400"
+              fontWeight="600"
               color="rgba(13,26,38,1)"
               lineHeight="30px"
               textAlign="left"
@@ -213,7 +213,7 @@ export default function Features2x2(props) {
             <Text
               fontFamily="Inter"
               fontSize="24px"
-              fontWeight="400"
+              fontWeight="600"
               color="rgba(13,26,38,1)"
               lineHeight="30px"
               textAlign="left"
@@ -278,7 +278,7 @@ export default function Features2x2(props) {
             <Text
               fontFamily="Inter"
               fontSize="24px"
-              fontWeight="400"
+              fontWeight="600"
               color="rgba(13,26,38,1)"
               lineHeight="30px"
               textAlign="left"

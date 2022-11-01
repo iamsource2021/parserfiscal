@@ -270,7 +270,7 @@ export default function ReviewCard(props) {
           fontSize="12px"
           lineHeight="12px"
           fontFamily="Inter"
-          fontWeight="400"
+          fontWeight="600"
           color="rgba(13,26,38,1)"
           textAlign="left"
           size="small"

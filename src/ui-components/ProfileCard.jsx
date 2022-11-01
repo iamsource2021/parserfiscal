@@ -37,6 +37,7 @@ export default function ProfileCard(props) {
         borderRadius="160px"
         padding="0px 0px 0px 0px"
         objectFit="cover"
+        src="https://media-exp1.licdn.com/dms/image/C4E03AQELDsRqB6oBmw/profile-displayphoto-shrink_800_800/0/1611353569637?e=1672876800&v=beta&t=91KPTvcJlTvqvhfp4_A4iiT433X4dnVp-u3y-aCCECM"
         {...getOverrideProps(overrides, "image")}
       ></Image>
       <Flex
@@ -69,7 +70,7 @@ export default function ProfileCard(props) {
           position="relative"
           padding="0px 0px 0px 0px"
           whiteSpace="pre-wrap"
-          children="Melinda Marcus"
+          children="Eduardo Ortiz"
           {...getOverrideProps(overrides, "Melinda Marcus")}
         ></Text>
         <Text
@@ -91,7 +92,7 @@ export default function ProfileCard(props) {
           position="relative"
           padding="0px 0px 0px 0px"
           whiteSpace="pre-wrap"
-          children="Design Engineer at Cloth Studios"
+          children="Senior Cloud Software Engineer"
           {...getOverrideProps(overrides, "Design Engineer at Cloth Studios")}
         ></Text>
       </Flex>
@@ -155,6 +156,7 @@ export default function ProfileCard(props) {
         shrink="0"
         alignSelf="stretch"
         position="relative"
+        border="1px SOLID rgba(0,0,0,1)"
         size="large"
         isDisabled={false}
         variation="primary"
