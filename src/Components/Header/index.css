@@ -73,7 +73,16 @@
   .HeaderGroup {
     grid-template-columns: repeat(4, 1fr);
   }
-  .Header a:nth-child(4) {
+
+  .Header > div > a.Links{
+    display: none;
+  }
+
+  .Header > div > a > button{
+    display: none;
+  }
+
+  .Header.HeaderScrolled > div > a > button{
     display: none;
   }
 }
