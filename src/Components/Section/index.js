@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import Waves from "../../Components/Waves/index";
+import Waves from "./../Waves/index";
 
 const SectionGroup = styled.div`
   background: url(${(props) => props.image});
@@ -34,14 +34,14 @@ const SectionTitleGroup = styled.div`
 const SectionTitle = styled.h3`
   color: white;
   font-size: 60px;
-  margin: 0;
-
+  margin: 0;  
   @media (max-width: 720px) {
     font-size: 40px;
   }
 `;
 const SectionText = styled.p`
   color: white;
+  text-align: justify;
   line-height: 1.2;
 `;
 const WaveTop = styled.div`

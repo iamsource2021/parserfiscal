@@ -1,19 +1,24 @@
-import logo from './logo.svg';
+import React from 'react';
 import './App.css';
-// import { ProfileCard, NavBar, HeroLayout1, SideBar } from './ui-components';
-import Home from "./Pages/Home/index";
-import { AmplifyProvider, useTheme  } from '@aws-amplify/ui-react'
-import "@aws-amplify/ui-react/styles.css";
+import Mobile from './Layouts/Mobile/index';
+import Desktop from './Layouts/Desktop/index';
+import { useStyleMediaQuery } from './hooks/useStyleMediaQuery.js';
 
 function App() {
-  const { tokens } = useTheme();
+
+  const { matches: isMobile } = useStyleMediaQuery(
+    {
+      mixOrMax: 'max', 
+      widthOrHeight: 'width', 
+      value: 767 
+    }
+  );  
+
   return (
     <div className="App">
-      <AmplifyProvider>
-        <Home />
-      </AmplifyProvider>
+      {isMobile && <Mobile />}
+      {!isMobile && <Desktop />}
     </div>
-
   );
 }
 
