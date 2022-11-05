@@ -15,12 +15,12 @@
   }
   .Hero h1 {
     margin: 0;
-    color: white;
+    color: #3f8624;
     line-height: 1.2;
     border-right: 4px solid #fff;
     overflow: hidden;
     white-space: nowrap;
-    animation: typing 14s steps(37) forwards, blink-caret 0.8s step-end infinite;
+    animation: typing 10s steps(37) forwards, blink-caret 0.3s step-end infinite;
     animation-iteration-count: infinite;
   }
   
@@ -30,7 +30,7 @@
       border-color: transparent;
     }
     50% {
-      border-color: #fff;
+      border-color: #3f8624;
     }
   }
   @keyframes typing {

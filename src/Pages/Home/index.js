@@ -13,18 +13,18 @@ function Home(props) {
               <a href="#industria">explorar aplicaciones</a>
               <div className="Logos">
                 <a
-                  href="https://www.instagram.com/ejctechnology.co.za/"
+                  href="#"
                   className="LinksLogo"
                 >
                   <img
-                    src="https://image.flaticon.com/icons/svg/174/174855.svg"
+                    src="/images/aws/lambda.png"
                     alt=""
                     width="60"
                   />
                 </a>
                 <a href="https://twitter.com/EjcTechnology" className="LinksLogo">
                   <img
-                    src="https://image.flaticon.com/icons/svg/733/733579.svg"
+                    src="/images/aws/model.png"
                     alt=""
                     width="60"
                   />
@@ -34,7 +34,7 @@ function Home(props) {
                   className="LinksLogo"
                 >
                   <img
-                    src="https://image.flaticon.com/icons/svg/2111/2111646.svg"
+                    src="/images/aws/bucket.png"
                     alt=""
                     width="60"
                   />
@@ -44,7 +44,7 @@ function Home(props) {
                   className="LinksLogo"
                 >
                   <img
-                    src="https://image.flaticon.com/icons/svg/174/174857.svg"
+                    src="/images/aws/APIGategay.png"
                     alt=""
                     width="60"
                   />
@@ -60,7 +60,7 @@ function Home(props) {
             <div className="Cards-1Group">
               <Card
                 title="Flutter Movil y Angular con Amplify"
-                image="https://static.dribbble.com/users/257709/screenshots/7802485/media/9f63203758b5fbd3fa661c980a6f65a6.png"
+                image="/images/main-bg-d.png"
               />
               <Card
                 title="Observer con arquitectura de eventos"
