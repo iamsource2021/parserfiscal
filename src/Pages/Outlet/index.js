@@ -1,5 +1,7 @@
 import React from "react";
 import Home from "../Home/index";
+import AgendaConsultoria from "./../AgendaConsultoria/index";
+
 import {
     BrowserRouter as Router,
     Link as ReactRouterLink,
@@ -12,6 +14,7 @@ function Outlet(props){
         <Router>
             <Routes>
                 <Route exact path="/" element={<Home />} />
+                <Route exact path="/agenda-consultoria" element={<AgendaConsultoria />} />
             </Routes>
       </Router>
     );

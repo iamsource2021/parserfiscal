@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import { Link } from "@aws-amplify/ui-react";
+import {Link as ReactRouterLink} from 'react-router-dom';
 import "./styles.css";
 
 class MenuResponsive extends Component {
@@ -32,16 +33,16 @@ class MenuResponsive extends Component {
                 <img src="/images/logo.png" alt="" width="35" />
               </Link>
               {/* <a href="/contact">Contact</a> */}
-              <Link className="Links" href="#servicios">
+              <Link className="Links" href="/#servicios">
                 Servicios
               </Link>
-              <Link className="Links" href="#ideal">
+              <Link className="Links" href="/#ideal">
                 Ideal
               </Link>
-              <Link className="Links" href="#industria">
+              <Link className="Links" href="/#industria">
               Industrias
               </Link>
-              <Link>
+              <Link href="/agenda-consultoria">
                 <button>Agenda Consultoría</button>
               </Link>
             </div>

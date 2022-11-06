@@ -1,6 +1,8 @@
 import Waves from "./../../Components/Waves/index";
 import Section from "./../../Components/Section/index";
 import  Card  from './../../Components/Card/index';
+import {Link} from 'react-router-dom';
+
 import "./index.css";
 
 function Home(props) {
