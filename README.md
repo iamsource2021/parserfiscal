@@ -68,3 +68,30 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+
+
+`
+mutation createScheduled {
+  createScheduled(
+    input: 
+    {
+      email: "eduardooa1980@gmail.comm", 
+      end: 1667945526, 
+      lifetime: 30, 
+      mobile: "3333026567", 
+      name: "eduardo ortiz", 
+      start: 1667949126
+    }) {
+    createdAt
+    email
+    end
+    id
+    lifetime
+    mobile
+    start
+    name
+    updatedAt
+  }
+}
+`

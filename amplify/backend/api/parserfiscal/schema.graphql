@@ -1,0 +1,33 @@
+# This "input" configures a global authorization rule to enable public access to
+# all models in this schema. Learn more about authorization rules here: https://docs.amplify.aws/cli/graphql/authorization-rules
+input AMPLIFY { globalAuthRule: AuthRule = { allow: public } } # FOR TESTING ONLY!
+
+type Scheduled @model {
+    id: ID! @primaryKey
+    email: String! @index(name:"byStart",sortKeyFields:["start"])
+    mobile: String!
+    name: String!
+    lifetime: Int!
+    start:AWSTimestamp! 
+    end:AWSTimestamp!
+}
+
+type ScheduledReturn{
+    id: ID!
+    email: String! 
+    mobile: String!
+    name: String!
+    lifetime: Int!
+    start:AWSTimestamp!
+    end:AWSTimestamp!   
+}
+
+type Mutation{
+    createScheduledCustom(
+        email: String!,
+        mobile: String!,
+        name: String!,
+        start:String!
+    ):ScheduledReturn
+     @function(name: "parserfiscal3b9dc654-${env}")
+}

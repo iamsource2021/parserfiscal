@@ -10,6 +10,17 @@
       "StackName": "amplify-parserfiscal-dev-144621",
       "StackId": "arn:aws:cloudformation:us-east-2:739297781662:stack/amplify-parserfiscal-dev-144621/b5513470-549d-11ed-a744-0a6a9ec0addc",
       "AmplifyAppId": "d1z11nh0v3b0mr"
+    },
+    "categories": {
+      "api": {
+        "parserfiscal": {}
+      },
+      "function": {
+        "parserfiscal3b9dc654": {
+          "deploymentBucketName": "amplify-parserfiscal-dev-144621-deployment",
+          "s3Key": "amplify-builds/parserfiscal3b9dc654-7a4336715632484a6951-build.zip"
+        }
+      }
     }
   }
 }
