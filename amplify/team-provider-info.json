@@ -18,7 +18,7 @@
       "function": {
         "parserfiscal3b9dc654": {
           "deploymentBucketName": "amplify-parserfiscal-dev-144621-deployment",
-          "s3Key": "amplify-builds/parserfiscal3b9dc654-7a4336715632484a6951-build.zip"
+          "s3Key": "amplify-builds/parserfiscal3b9dc654-51372f734a472b51746d-build.zip"
         }
       }
     }

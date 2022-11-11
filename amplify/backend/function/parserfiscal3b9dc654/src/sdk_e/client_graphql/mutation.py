@@ -6,15 +6,13 @@ def createScheduled():
         $input: CreateScheduledInput!
     ) {
         createScheduled(input: $input) {
-            createdAt
+            id   
             email
-            end
-            id
-            lifetime
             mobile
-            start
             name
-            updatedAt   
+            lifetime
+            start
+            end 
         }
     }""")
     return query_string    

@@ -29,14 +29,15 @@ def exec_query(item):
         raise ClientGraphqlException(str(e.args)) 
 
 def generate_payload(event):
+    e = event['arguments']
     lifetime = 30
     return { 
-        'email': event['email'], 
-        'end': set_end(event['start'],lifetime), 
+        'email': e['email'], 
+        'end': set_end(e['start'],lifetime), 
         'lifetime': lifetime, 
-        'mobile': event['mobile'], 
-        'name': event['name'], 
-        'start': set_start(event['start'])    
+        'mobile': e['mobile'], 
+        'name': e['name'], 
+        'start': set_start(e['start'])    
     }
 
 def convert_iso_timezone_to_timestamp(iso_str,format="%a %b %d %Y %H:%M:%S %Z%z"):
@@ -54,14 +55,8 @@ def set_start(start_time):
     return int(dt_ts.timestamp())
 
 def handler(event, context):
+    print('event::',event)
     payload = generate_payload(event)
     result =  exec_query(payload)
-    return {
-        'statusCode': 200,
-        'headers': {
-            'Access-Control-Allow-Headers': '*',
-            'Access-Control-Allow-Origin': '*',
-            'Access-Control-Allow-Methods': 'OPTIONS,POST,GET'
-        },
-        'body': json.dumps(result)
-    } 
+    print('RESULT::',result)
+    return result['createScheduled']
