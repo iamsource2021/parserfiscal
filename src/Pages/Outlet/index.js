@@ -1,6 +1,7 @@
 import React from "react";
 import Home from "../Home/index";
-import AgendaConsultoria from "./../AgendaConsultoria/index";
+// import AgendaConsultoria from "./../AgendaConsultoria/index";
+import { AgendaConsultoriavdos } from "./../AgendaConsultoriav2/index";
 
 import {
     BrowserRouter as Router,
@@ -14,7 +15,8 @@ function Outlet(props){
         <Router>
             <Routes>
                 <Route exact path="/" element={<Home />} />
-                <Route exact path="/agenda-consultoria" element={<AgendaConsultoria />} />
+                {/* <Route exact path="/agenda-consultoria" element={<AgendaConsultoria />} /> */}
+                <Route exact path="/agenda-consultoria" element={<AgendaConsultoriavdos />} />
             </Routes>
       </Router>
     );
