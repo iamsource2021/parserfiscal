@@ -28,7 +28,7 @@ export const AgendaConsultoriavdos = () => {
                             onValidate={{
                                 agendarConsulta: {
                                     name: (value, validationResponse) => {
-                                        if(!value){
+                                        if(typeof value === 'undefined'){
                                             return {
                                                 hasError: true,
                                                 errorMessage: "Nombre es requerido"
