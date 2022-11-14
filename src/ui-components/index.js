@@ -26,6 +26,7 @@ export { default as TallCard } from "./TallCard";
 export { default as FeaturesText2x2 } from "./FeaturesText2x2";
 export { default as MyIcon } from "./MyIcon";
 export { default as Newsfeedexample } from "./Newsfeedexample";
+export { default as FormAgendar } from "./FormAgendar";
 export { default as FormCheckout } from "./FormCheckout";
 export { default as HeroLayout3 } from "./HeroLayout3";
 export { default as MarketingPricing } from "./MarketingPricing";

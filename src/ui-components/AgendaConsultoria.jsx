@@ -26,7 +26,7 @@ export default function AgendaConsultoria(props) {
   const validations = {
     "agendarConsulta.name": [],
     "agendarConsulta.email": [{ type: "Email" }],
-    "agendarConsulta.mobile": [],
+    "agendarConsulta.mobile": [{ type: "Phone" }],
     "agendarConsulta.start": [],
   };
   const runValidationTasks = async (fieldName, value) => {
@@ -75,11 +75,11 @@ export default function AgendaConsultoria(props) {
     >
       <Heading
         level={3}
-        children="Agendar consulta"
+        children="Agendar Consulta"
         {...getOverrideProps(overrides, "agendarConsulta")}
       ></Heading>
       <TextField
-        label="Name"
+        label="Nombre *"
         onChange={(e) => {
           let { value } = e.target;
           if (onChange) {
@@ -102,7 +102,7 @@ export default function AgendaConsultoria(props) {
         {...getOverrideProps(overrides, "agendarConsulta.name")}
       ></TextField>
       <TextField
-        label="Email"
+        label="Email *"
         onChange={(e) => {
           let { value } = e.target;
           if (onChange) {
@@ -125,7 +125,8 @@ export default function AgendaConsultoria(props) {
         {...getOverrideProps(overrides, "agendarConsulta.email")}
       ></TextField>
       <TextField
-        label="Mobile"
+        label="Telefono *"
+        type="tel"
         onChange={(e) => {
           let { value } = e.target;
           if (onChange) {
@@ -151,7 +152,7 @@ export default function AgendaConsultoria(props) {
         {...getOverrideProps(overrides, "agendarConsulta.mobile")}
       ></TextField>
       <TextField
-        label="Fecha y Hora"
+        label="Fecha y Hora *"
         type="datetime-local"
         onChange={(e) => {
           let { value } = e.target;
@@ -178,23 +179,9 @@ export default function AgendaConsultoria(props) {
         justifyContent="space-between"
         {...getOverrideProps(overrides, "CTAFlex")}
       >
-        <Button
-          children="Clear"
-          type="reset"
-          onClick={resetStateValues}
-          {...getOverrideProps(overrides, "ClearButton")}
-        ></Button>
         <Flex {...getOverrideProps(overrides, "RightAlignCTASubFlex")}>
           <Button
-            children="Cancel"
-            type="button"
-            onClick={() => {
-              onCancel && onCancel();
-            }}
-            {...getOverrideProps(overrides, "CancelButton")}
-          ></Button>
-          <Button
-            children="Submit"
+            children="Agendar"
             type="submit"
             variation="primary"
             isDisabled={Object.values(errors).some((e) => e?.hasError)}
