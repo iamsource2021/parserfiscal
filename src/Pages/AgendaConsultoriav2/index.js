@@ -26,20 +26,15 @@ export const AgendaConsultoriavdos = () => {
                         <AgendaConsultoria
                             onSubmit={handleOnSubmit}
                             onValidate={{
-                                isRequerid: (value, validationResponse) => {
-                                    //     const firstWord = value.split("")[0];
-                                    //     console.log(typeof(firstWord))
-                                    //     if (firstWord) { // check if the first word is a number 
-                                    //         return {
-                                    //           hasError: true,
-                                    //           errorMessage: "Address must start with a number"
-                                    //         } 
-                                    //       }
-                                    //       return validationResponse        
-                                    // }     
-                                    return {
-                                        hasError: true,
-                                        errorMessage: "Address must start with a number"
+                                agendarConsulta: {
+                                    name: (value, validationResponse) => {
+                                        if(!value){
+                                            return {
+                                                hasError: true,
+                                                errorMessage: "Nombre es requerido"
+                                            }
+                                        }
+                                        return validationResponse
                                     }
                                 }
                             }}
