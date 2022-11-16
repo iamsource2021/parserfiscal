@@ -1,16 +1,18 @@
-const Validate = {
-    name: (value, validationResponse) => {
-        const firstWord = value.split("")[0];
-        console.log(typeof(firstWord))
-        if (firstWord) { // check if the first word is a number 
-            return {
-              hasError: true,
-              errorMessage: "Address must start with a number"
-            } 
-          }
-          return validationResponse        
+const handleValidate = {
+    agendarConsulta: {
+        name: (value, validationResponse) => {
+            console.log(value)
+            if(typeof value === 'undefined'){
+                console.log(value)
+                return {
+                    hasError: true,
+                    errorMessage: "Nombre es requerido"
+                }
+            }
+            return validationResponse                                      
+        }
     }
-}    
+}
 
 
 export default Validate;

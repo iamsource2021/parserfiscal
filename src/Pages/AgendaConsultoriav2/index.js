@@ -1,3 +1,4 @@
+import React from "react";
 import { AgendaConsultoria } from "./../../ui-components";
 import "@aws-amplify/ui-react/styles.css";
 import {
@@ -6,36 +7,51 @@ import {
     Card,
     useTheme
 } from '@aws-amplify/ui-react';
-import Validate from "./validate";
 
 export const AgendaConsultoriavdos = () => {
     const { tokens } = useTheme();
+    // const [errors, setErrors] = useState({errorMessage: false});
 
     const handleOnSubmit = async (fields) => {
         const event = new Date(fields['agendarConsulta']['start']);
         fields['agendarConsulta']['start'] = event.toString();
         console.log(fields)
-        // console.log(        )
-    }
+
+    };
+
+    const handleValidate = {
+        agendarConsulta: {
+            name: (value, validationResponse) => {
+                // return validationResponse  
+
+                console.log('VALUE::',value);
+                console.log('validationResponse::',validationResponse);
+                console.log(value)
+                if(typeof value === 'undefined'){
+                    console.log(value)
+                    return {
+                        hasError: true,
+                        errorMessage: "Nombre es requerido"
+                    }
+                }else{
+                    return {
+                        hasError: false
+                    }                   
+                }                              
+            }
+        }
+    };
 
     return (
         <View padding={tokens.space.xxxl} paddingTop="150px">
             <Card variation="elevated" padding="1rem">
                 <Grid templateColumns={{ base: "1fr", medium: "1fr" }} textAlign="center">
                     <View>
-                        <AgendaConsultoria
+                        <AgendaConsultoria 
                             onSubmit={handleOnSubmit}
-                            onValidate={{
-                                agendarConsulta: {
-                                    name: (value, validationResponse) => {
-                                        if(typeof value === 'undefined'){
-                                            return {
-                                                hasError: true,
-                                                errorMessage: "Nombre es requerido"
-                                            }
-                                        }
-                                        return validationResponse
-                                    }
+                            overrides={{
+                                "agendarConsulta.name":{                                    
+                                    isRequired:true                          
                                 }
                             }}
                         />

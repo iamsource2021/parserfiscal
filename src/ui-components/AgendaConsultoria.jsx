@@ -24,7 +24,13 @@ export default function AgendaConsultoria(props) {
     setErrors({});
   };
   const validations = {
-    "agendarConsulta.name": [],
+    "agendarConsulta.name": [
+      {
+        type: "GreaterThanChar",
+        numValues: [1],
+        validationMessage: "The value must be at least 1 characters",
+      },
+    ],
     "agendarConsulta.email": [{ type: "Email" }],
     "agendarConsulta.mobile": [{ type: "Phone" }],
     "agendarConsulta.start": [],
