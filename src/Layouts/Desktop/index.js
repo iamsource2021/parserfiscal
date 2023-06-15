@@ -7,7 +7,7 @@ import { Fragment } from 'react';
 import ScrollButton from './../../Components/ScrollButton/index';
 
 function Desktop(props) {
-    document.title = 'e - Despliegue aplicaciones nativas en la nube de forma facil.'
+    document.title = 'E - Despliegue aplicaciones nativas en la nube de forma facil.'
     return (
         <Fragment>
             <Header />

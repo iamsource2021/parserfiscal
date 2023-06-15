@@ -21,8 +21,8 @@ export default function SideBarVariant(props) {
       alignItems="flex-start"
       position="relative"
       padding="0px 0px 0px 0px"
-      {...rest}
       {...getOverrideProps(overrides, "SideBarVariant")}
+      {...rest}
     >
       <SideBar
         display="flex"

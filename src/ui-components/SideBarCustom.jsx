@@ -23,8 +23,8 @@ export default function SideBarCustom(props) {
       position="relative"
       padding="0px 0px 0px 0px"
       backgroundColor="rgba(255,255,255,1)"
-      {...rest}
       {...getOverrideProps(overrides, "SideBarCustom")}
+      {...rest}
     >
       <Text
         fontFamily="Inter"

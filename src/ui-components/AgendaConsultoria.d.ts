@@ -5,8 +5,8 @@
  **************************************************************************/
 
 import * as React from "react";
-import { EscapeHatchProps } from "@aws-amplify/ui-react/internal";
 import { GridProps, HeadingProps, TextFieldProps } from "@aws-amplify/ui-react";
+import { EscapeHatchProps } from "@aws-amplify/ui-react/internal";
 export declare type ValidationResponse = {
     hasError: boolean;
     errorMessage?: string;
@@ -28,21 +28,20 @@ export declare type AgendaConsultoriaValidationValues = {
         start?: ValidationFunction<string>;
     };
 };
-export declare type FormProps<T> = Partial<T> & React.DOMAttributes<HTMLDivElement>;
+export declare type PrimitiveOverrideProps<T> = Partial<T> & React.DOMAttributes<HTMLDivElement>;
 export declare type AgendaConsultoriaOverridesProps = {
-    AgendaConsultoriaGrid?: FormProps<GridProps>;
-    agendarConsulta?: FormProps<HeadingProps>;
-    "agendarConsulta.name"?: FormProps<TextFieldProps>;
-    "agendarConsulta.email"?: FormProps<TextFieldProps>;
-    "agendarConsulta.mobile"?: FormProps<TextFieldProps>;
-    "agendarConsulta.start"?: FormProps<TextFieldProps>;
+    AgendaConsultoriaGrid?: PrimitiveOverrideProps<GridProps>;
+    agendarConsulta?: PrimitiveOverrideProps<HeadingProps>;
+    "agendarConsulta.name"?: PrimitiveOverrideProps<TextFieldProps>;
+    "agendarConsulta.email"?: PrimitiveOverrideProps<TextFieldProps>;
+    "agendarConsulta.mobile"?: PrimitiveOverrideProps<TextFieldProps>;
+    "agendarConsulta.start"?: PrimitiveOverrideProps<TextFieldProps>;
 } & EscapeHatchProps;
 export declare type AgendaConsultoriaProps = React.PropsWithChildren<{
     overrides?: AgendaConsultoriaOverridesProps | undefined | null;
 } & {
     onSubmit: (fields: AgendaConsultoriaInputValues) => void;
-    onCancel?: () => void;
     onChange?: (fields: AgendaConsultoriaInputValues) => AgendaConsultoriaInputValues;
     onValidate?: AgendaConsultoriaValidationValues;
-}>;
+} & React.CSSProperties>;
 export default function AgendaConsultoria(props: AgendaConsultoriaProps): React.ReactElement;

@@ -1,7 +1,6 @@
-import Waves from "./../../Components/Waves/index";
+import Wavesocean from "./../../Components/Wavesocean/index";
 import Section from "./../../Components/Section/index";
 import  Card  from './../../Components/Card/index';
-import {Link} from 'react-router-dom';
 
 import "./index.css";
 
@@ -9,52 +8,12 @@ function Home(props) {
     return (
         <>
           <div className="Hero">
-            <div className="HeroGroup">
-              <h1>&gt;  deploy app easy</h1>
-              <p>Despliegue aplicaciones nativas en la nube de forma facil.</p>
-              <a href="#industria">explorar aplicaciones</a>
-              <div className="Logos">
-                <a
-                  href="#"
-                  className="LinksLogo"
-                >
-                  <img
-                    src="/images/aws/lambda.png"
-                    alt=""
-                    width="60"
-                  />
-                </a>
-                <a href="https://twitter.com/EjcTechnology" className="LinksLogo">
-                  <img
-                    src="/images/aws/model.png"
-                    alt=""
-                    width="60"
-                  />
-                </a>
-                <a
-                  href="https://www.google.com/search?ei=3vROX4_LHK201fAPlu6GiA4&q=EJC+Technology&oq=EJC+Technology&gs_lcp=CgZwc3ktYWIQAzILCC4QxwEQrwEQkwIyAggAMgYIABAWEB4yAggmOgQIABBHOg0ILhDHARCvARBDEJMCOgQIABBDOggIABCxAxCDAToICC4QsQMQgwE6DgguELEDEIMBEMcBEKMCOgsILhCxAxDHARCjAjoFCC4QsQM6CAguEMcBEK8BOggIABAWEAoQHlC4wxJYnvESYOr1EmgCcAF4AIABwQKIAbMhkgEGMi0xNC4ymAEAoAEBqgEHZ3dzLXdpesABAQ&sclient=psy-ab&ved=0ahUKEwiPsp6_qMnrAhUtWhUIHRa3AeEQ4dUDCAw&uact=5"
-                  className="LinksLogo"
-                >
-                  <img
-                    src="/images/aws/bucket.png"
-                    alt=""
-                    width="60"
-                  />
-                </a>
-                <a
-                  href="https://www.linkedin.com/company/ejctechnology/?viewAsMember=true"
-                  className="LinksLogo"
-                >
-                  <img
-                    src="/images/aws/APIGategay.png"
-                    alt=""
-                    width="60"
-                  />
-                </a>
-              </div>
-    
-              <Waves />
-            </div>
+            <div className="HeroGroup">            
+              <h1>Despliegue aplicaciones</h1>
+              <p>nativas en la nube de forma facil.</p>
+              <a href="#industria">explorar aplicaciones</a> 
+              <Wavesocean />             
+            </div>            
           </div>
           <div id="servicios"></div>
           <div className="Cards-1">

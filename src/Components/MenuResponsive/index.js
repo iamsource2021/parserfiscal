@@ -1,6 +1,5 @@
 import React, { Component } from "react";
 import { Link } from "@aws-amplify/ui-react";
-import {Link as ReactRouterLink} from 'react-router-dom';
 import "./styles.css";
 
 class MenuResponsive extends Component {

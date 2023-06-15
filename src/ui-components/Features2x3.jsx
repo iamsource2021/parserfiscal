@@ -21,8 +21,8 @@ export default function Features2x3(props) {
       position="relative"
       padding="40px 140px 40px 140px"
       backgroundColor="rgba(239,240,240,1)"
-      {...rest}
       {...getOverrideProps(overrides, "Features2x3")}
+      {...rest}
     >
       <Flex
         gap="24px"

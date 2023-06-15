@@ -22,8 +22,8 @@ export default function Newsfeedexample(props) {
       position="relative"
       padding="0px 0px 0px 0px"
       backgroundColor="rgba(255,255,255,1)"
-      {...rest}
       {...getOverrideProps(overrides, "Newsfeedexample")}
+      {...rest}
     >
       <Flex
         gap="16px"

@@ -20,8 +20,8 @@ export default function FormAgendar(props) {
       alignItems="flex-start"
       position="relative"
       padding="0px 0px 0px 0px"
-      {...rest}
       {...getOverrideProps(overrides, "FormAgendar")}
+      {...rest}
     >
       <Flex
         gap="0"

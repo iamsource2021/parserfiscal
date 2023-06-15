@@ -6,12 +6,11 @@
 
 /* eslint-disable */
 import * as React from "react";
-import { fetchByPath, validateField } from "./utils";
-import { getOverrideProps } from "@aws-amplify/ui-react/internal";
 import { Button, Flex, Grid, Heading, TextField } from "@aws-amplify/ui-react";
+import { getOverrideProps } from "@aws-amplify/ui-react/internal";
+import { fetchByPath, validateField } from "./utils";
 export default function AgendaConsultoria(props) {
-  const { onSubmit, onCancel, onValidate, onChange, overrides, ...rest } =
-    props;
+  const { onSubmit, onValidate, onChange, overrides, ...rest } = props;
   const initialValues = {
     agendarConsulta: {},
   };
@@ -35,7 +34,15 @@ export default function AgendaConsultoria(props) {
     "agendarConsulta.mobile": [{ type: "Phone" }],
     "agendarConsulta.start": [],
   };
-  const runValidationTasks = async (fieldName, value) => {
+  const runValidationTasks = async (
+    fieldName,
+    currentValue,
+    getDisplayValue
+  ) => {
+    const value =
+      currentValue && getDisplayValue
+        ? getDisplayValue(currentValue)
+        : currentValue;
     let validationResponse = validateField(value, validations[fieldName]);
     const customValidator = fetchByPath(onValidate, fieldName);
     if (customValidator) {
@@ -76,8 +83,8 @@ export default function AgendaConsultoria(props) {
         }
         await onSubmit(modelFields);
       }}
-      {...rest}
       {...getOverrideProps(overrides, "AgendaConsultoria")}
+      {...rest}
     >
       <Heading
         level={3}
@@ -86,6 +93,7 @@ export default function AgendaConsultoria(props) {
       ></Heading>
       <TextField
         label="Nombre *"
+        value={agendarConsulta["name"]}
         onChange={(e) => {
           let { value } = e.target;
           if (onChange) {
@@ -109,6 +117,7 @@ export default function AgendaConsultoria(props) {
       ></TextField>
       <TextField
         label="Email *"
+        value={agendarConsulta["email"]}
         onChange={(e) => {
           let { value } = e.target;
           if (onChange) {
@@ -133,6 +142,7 @@ export default function AgendaConsultoria(props) {
       <TextField
         label="Telefono *"
         type="tel"
+        value={agendarConsulta["mobile"]}
         onChange={(e) => {
           let { value } = e.target;
           if (onChange) {
@@ -160,6 +170,7 @@ export default function AgendaConsultoria(props) {
       <TextField
         label="Fecha y Hora *"
         type="datetime-local"
+        value={agendarConsulta["start"]}
         onChange={(e) => {
           let { value } = e.target;
           if (onChange) {
@@ -185,7 +196,10 @@ export default function AgendaConsultoria(props) {
         justifyContent="space-between"
         {...getOverrideProps(overrides, "CTAFlex")}
       >
-        <Flex {...getOverrideProps(overrides, "RightAlignCTASubFlex")}>
+        <Flex
+          gap="15px"
+          {...getOverrideProps(overrides, "RightAlignCTASubFlex")}
+        >
           <Button
             children="Agendar"
             type="submit"

@@ -6,8 +6,14 @@
 
 import * as React from "react";
 import { EscapeHatchProps } from "@aws-amplify/ui-react/internal";
+import { SideBarProps } from "./SideBar";
 import { FlexProps } from "@aws-amplify/ui-react";
+export declare type PrimitiveOverrideProps<T> = Partial<T> & React.DOMAttributes<HTMLDivElement>;
+export declare type SideBarVariantOverridesProps = {
+    SideBarVariant?: PrimitiveOverrideProps<FlexProps>;
+    SideBarVariant37802886?: SideBarProps;
+} & EscapeHatchProps;
 export declare type SideBarVariantProps = React.PropsWithChildren<Partial<FlexProps> & {
-    overrides?: EscapeHatchProps | undefined | null;
+    overrides?: SideBarVariantOverridesProps | undefined | null;
 }>;
 export default function SideBarVariant(props: SideBarVariantProps): React.ReactElement;

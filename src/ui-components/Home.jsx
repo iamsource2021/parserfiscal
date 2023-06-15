@@ -21,8 +21,8 @@ export default function Home(props) {
       position="relative"
       padding="0px 0px 0px 0px"
       backgroundColor="rgba(245,245,245,1)"
-      {...rest}
       {...getOverrideProps(overrides, "Home")}
+      {...rest}
     >
       <Flex
         gap="10px"

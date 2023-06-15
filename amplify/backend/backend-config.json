@@ -1,36 +1,54 @@
 {
   "api": {
     "parserfiscal": {
-      "service": "AppSync",
-      "providerPlugin": "awscloudformation",
       "dependsOn": [],
       "output": {
         "authConfig": {
+          "additionalAuthenticationProviders": [],
           "defaultAuthentication": {
-            "authenticationType": "API_KEY",
             "apiKeyConfig": {
               "apiKeyExpirationDays": 7
-            }
-          },
-          "additionalAuthenticationProviders": []
+            },
+            "authenticationType": "API_KEY"
+          }
         }
-      }
+      },
+      "providerPlugin": "awscloudformation",
+      "service": "AppSync"
     }
   },
   "function": {
     "parserfiscal3b9dc654": {
       "build": true,
-      "providerPlugin": "awscloudformation",
-      "service": "Lambda",
       "dependsOn": [
         {
-          "category": "api",
-          "resourceName": "parserfiscal",
           "attributes": [
             "GraphQLAPIIdOutput",
             "GraphQLAPIEndpointOutput",
             "GraphQLAPIKeyOutput"
-          ]
+          ],
+          "category": "api",
+          "resourceName": "parserfiscal"
+        }
+      ],
+      "providerPlugin": "awscloudformation",
+      "service": "Lambda"
+    }
+  },
+  "parameters": {
+    "AMPLIFY_function_parserfiscal3b9dc654_deploymentBucketName": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "parserfiscal3b9dc654"
+        }
+      ]
+    },
+    "AMPLIFY_function_parserfiscal3b9dc654_s3Key": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "parserfiscal3b9dc654"
         }
       ]
     }

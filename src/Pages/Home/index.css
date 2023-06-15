@@ -10,12 +10,13 @@
   .HeroGroup {
     margin: 0 auto;
     max-width: 500px;
-    padding: 150px 50px;
+    padding: 150px 50px 0 0;
     text-align: center;
   }
   .Hero h1 {
+    font-size: xx-large;
     margin: 0;
-    color: #3f8624;
+    color: #ffffff;
     line-height: 1.2;
     border-right: 4px solid #fff;
     overflow: hidden;
@@ -30,7 +31,7 @@
       border-color: transparent;
     }
     50% {
-      border-color: #3f8624;
+      border-color: #ffffff;
     }
   }
   @keyframes typing {
@@ -57,7 +58,6 @@
   .Hero p {
     color: rgba(255, 255, 255, 0.8);
     font-size: 30px;
-    line-height: 1.5;
     opacity: 0;
     animation: HeroAnimation;
     animation-duration: 3s;
@@ -107,9 +107,10 @@
   }
   
   .Hero svg {
-    position: absolute;
+    /* position: fixed; */
     bottom: 0;
     left: 0;
+    margin-top: 120px;
   }
   
   .Hero .Logos {
@@ -171,6 +172,3 @@
   }
 
 
-#servicios {
-  padding-bottom: 36px;
-}
